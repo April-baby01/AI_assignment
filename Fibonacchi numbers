@@ -1,0 +1,21 @@
+# Input the number of Fibonacci numbers to generate
+n = int(input("Enter the number of Fibonacci numbers to generate: "))
+
+if n <= 0:
+    print("Please enter a positive integer.")
+else:
+    first_number, second_number = 0, 1
+    count = 2  
+
+    # Print the first two Fibonacci numbers
+    if n >= 1:
+        print(first_number)
+    if n >= 2:
+        print(second_number)
+
+    # Generate and print the rest of the Fibonacci sequence
+    while count < n:
+        next_number = first_number + second_number
+        print(next_number)
+        first_number, second_number = second_number, next_number
+        count += 1
