@@ -1,0 +1,19 @@
+list1 = [12, -7, 5, 64, -14]
+print("Input:", list1)
+
+positive_numbers = [num for num in list1 if num > 0]
+
+if positive_numbers:
+    print("Output:", positive_numbers)
+else:
+    print("No positive numbers found in the input list."
+
+list2 = [12, 14, -95, 3]
+print("Input:", list2)
+
+positive_numbers = [num for num in list2 if num > 0]
+
+if positive_numbers:
+    print("Output:", positive_numbers)
+else:
+    print("No positive numbers found in the input list.")
